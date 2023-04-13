@@ -12,3 +12,8 @@ spec:
         configMapKeyRef:
           name: test
           key: love
+    - name: raju
+      valueFrom: 
+        configMapKeyRef:
+          name: test
+          key: name   
