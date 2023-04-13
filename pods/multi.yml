@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - image: nginx:latest
+    name: nginx
+    ports:
+    - containerPort: 80
+  - image: almalinux
+    name: almalinux
+    command: ["sleep","200"]
+        
+    
+       
+
