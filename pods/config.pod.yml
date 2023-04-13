@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: confg-pod
+spec:
+  containers:
+    image: nginx:latest
+    name: nginx
+    env:
+    - name: love
+      valueFrom:
+        configMapKeyRef:
+          name: test
+          key: love
