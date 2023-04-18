@@ -1,16 +1,16 @@
-apiVersion: eksctl.io/v1alpha5
-kind: ClusterConfig
+  apiVersion: eksctl.io/v1alpha5
+  kind: ClusterConfig
 
-metadata:
-  name: my-eks-cluster
-  region: ap-south-1
+  metadata:
+    name: my-eks-cluster
+    region: ap-south-1
 
-nodeGroups:
-  - name: my-eks-nodegroup
-    instanceType: t2.micro
-    desiredCapacity: 1
-    privateNetworking: true
-    ssh:
-      allow: true
-      publicKeyName: key
+  nodeGroups:
+    - name: my-eks-nodegroup
+      instanceType: t2.micro
+      desiredCapacity: 1
+      privateNetworking: true
+      ssh:
+        allow: true
+        publicKeyName: key
 
