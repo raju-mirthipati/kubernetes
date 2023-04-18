@@ -7,13 +7,13 @@ spec:
   - image: nginx:latest
     name: nginx
     env:
-    - name: test
+    - name: raju
       valueFrom:
         configMapKeyRef:
-          name: raju
+          name: test
           key: love
-    - name: test
+    - name: harika
       valueFrom: 
         configMapKeyRef:
-          name: harika
+          name: test
           key: love
