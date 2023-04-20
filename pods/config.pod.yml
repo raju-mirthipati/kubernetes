@@ -14,4 +14,4 @@ spec:
     #       key: cource # this is refrence form the configmaps 
     envFrom:
     - configMapRef:
-      name: test
+        name: test 
