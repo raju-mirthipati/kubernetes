@@ -6,9 +6,12 @@ spec:
   containers:
   - image: nginx:latest
     name: nginx
-    env:
-    - name: cource # this is the name of the env
-      valueFrom:
-        configMapKeyRef:
-          name: test
-          key: cource # this is refrence form the configmaps 
+    # env:
+    # - name: cource # this is the name of the env
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: test
+    #       key: cource # this is refrence form the configmaps 
+    envFrom:
+    - configMapKeyRef:
+      name: test
