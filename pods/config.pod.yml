@@ -7,7 +7,7 @@ spec:
   - image: nginx:latest
     name: nginx
     env:
-    - name: test
+    - name: cource
       valueFrom:
         configMapKeyRef:
           name: test
