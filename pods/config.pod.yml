@@ -7,8 +7,8 @@ spec:
   - image: nginx:latest
     name: nginx
     env:
-    - name: cource 
+    - name: cource # this is the name of the env
       valueFrom:
         configMapKeyRef:
           name: test
-          key: cource
+          key: cource # this is refrence form the configmaps 
