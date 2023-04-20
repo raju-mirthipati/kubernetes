@@ -4,4 +4,4 @@ metadata:
   name: test
 data:
   name: raju
-  cource: kubernetes
+  cource: docker
