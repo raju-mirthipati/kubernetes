@@ -9,7 +9,6 @@
     - name: my-eks-nodegroup
       instanceType: t2.micro
       desiredCapacity: 2
-      privateNetworking: true
       ssh:
         allow: true
         publicKeyName: key
