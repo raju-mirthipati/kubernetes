@@ -19,7 +19,7 @@ metadata:
 spec:
   selector:
     app: nginx
-    app: almalinux
+    
   ports:
     - protocol: TCP
       port: 80
