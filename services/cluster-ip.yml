@@ -42,4 +42,5 @@ spec:
   containers:
   - image: ubuntu:latest
     name: app
-    command: ["sleep","200000"] 
+    ports:
+    - containerPort: 8080
