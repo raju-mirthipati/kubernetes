@@ -28,7 +28,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: almalinux
-  spec:
+spec:
     containers:
     - image: almalinux
       name: app
