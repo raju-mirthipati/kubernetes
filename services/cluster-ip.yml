@@ -29,9 +29,7 @@ kind: Pod
 metadata:
   name: almalinux
 spec:
-    containers:
-    - image: almalinux
-      name: app
-      ports:
-      - containerPort: 80
-      command: ["sleep","20000"] 
+  containers:
+  - image: almalinux
+    name: app
+    command: ["sleep","20000"] 
