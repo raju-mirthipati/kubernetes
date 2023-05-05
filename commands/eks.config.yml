@@ -10,7 +10,6 @@ nodeGroups:
     instanceType: t2.micro
     desiredCapacity: 3
     spot: true
-    maxPrice: 0.05
     ssh:
       allow: true
       publicKeyName: key
