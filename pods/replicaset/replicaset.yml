@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: ReplicaSet
-metadata:
-  name: frontend
+metadata: 
+  name: nginx
   labels:
-    app: guestbook
-    tier: frontend
+    web: nginx
 spec:
-  # modify replicas according to your case
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
-      tier: nginx
-  template:
-    metadata:
-      labels:
-        tier: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx
+      name: raju
+template:
+  metadata:
+    labels:     
+      name: raju
+spec:
+  containers:
+  - image: nginx
+    name: nginx       
