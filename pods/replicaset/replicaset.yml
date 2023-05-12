@@ -9,10 +9,10 @@ spec:
   selector:
     matchLabels:
       name: raju
-template:
-  metadata:
-    labels:     
-      name: raju
+  template:
+    metadata:
+      labels:     
+        name: raju
 spec:
   containers:
   - image: nginx
