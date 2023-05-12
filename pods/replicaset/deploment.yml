@@ -12,8 +12,9 @@ spec:
     matchLabels:
       name: raju
   template:
-    labels:
-      name: raju
+    metadata:
+      labels:
+        name: raju
     spec:
       containers:
       - image: nginx:1.23.4
@@ -30,7 +31,7 @@ spec:
   selector:
     name: raju
   ports:
-  - protocal: TCP
-    port: 8080
-    targetport: 80
+  - protocol: TCP
+    port: 80
+    targetPort: 80
 ---    
