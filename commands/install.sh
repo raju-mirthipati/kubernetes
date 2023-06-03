@@ -32,3 +32,5 @@ chmod +x /usr/local/bin/kubectl
 kubectl version --short --client
 
 
+
+
