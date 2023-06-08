@@ -8,13 +8,11 @@ spec:
   containers:
   - image: nginx:latest
     name: nginx-application
-    imagePullPolicey: Always
     volumeMounts:
     - name: logs
       mountPath: /var/logs/nginx
-  - image: buzybox
+  - image: busybox
     name: sidecar-container
-    imagePullPolicey: Always
     volumeMounts:
     - name: logs
       mountPath: /var/logs/nginx            
