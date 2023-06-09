@@ -9,34 +9,7 @@ managedNodeGroups:
 - name: spot
   instanceTypes: ["t2.micro"]
   spot: true
-  desiredCapacity: 6
+  desiredCapacity: 4
   ssh:
       allow: true
-      publicKeyName: key
-
-
-
-
-
-
-
-
-
-
-# spot-cluster.yaml
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      publicKeyName: all
