@@ -31,7 +31,7 @@ metadata:
   name: my-pod
 spec:
   containers:
-    - name: my-container
+    - name: nginx
       image: nginx
       volumeMounts:
         - name: ebs-volume
