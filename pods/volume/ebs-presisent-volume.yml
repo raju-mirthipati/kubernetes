@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: my-pv
+  name: ebs-volume
 spec:
   storageClassName: manual
   capacity:
@@ -23,6 +23,7 @@ spec:
   resources:
     requests:
       storage: 20Gi
+  volumeName: ebs-volume 
 ---
 apiVersion: v1
 kind: Pod
